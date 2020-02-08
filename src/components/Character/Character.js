@@ -1,3 +1,7 @@
+// TODO
+// Create inputs for each of the character information
+// once information is submitted, make a PUT to the backend API
+
 import React, { Component } from 'react';
 
 import { Row, Col, Collapse, Button } from "reactstrap";
