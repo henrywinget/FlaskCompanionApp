@@ -32,11 +32,20 @@ class App extends Component {
     })
   };
   
+  deleteCharacter = id => {
+    if(window.confirm('Are you sure you want to delete this character? This is a permanent action!')) {
+      API.doDelete("/delete_character/" + id, null, () => {
+        this.getAllCharacters();
+      })
+    }
+  };
+  
   render() {
     return (
       <div className="App">
         <NavBar/>
         <Party postNewCharacter={this.postNewCharacter}
+               deleteCharacter={this.deleteCharacter}
                characters={this.state.characters}/>
       </div>
     );

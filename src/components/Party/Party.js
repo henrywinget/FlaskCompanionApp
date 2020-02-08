@@ -13,7 +13,10 @@ class Party extends Component {
 				<Row>
 					<Col md={6}>
 						<h2>Current Party</h2>
-						{this.props.characters.map((character, index) => <Character key={"Character_info_" + index} character={character} index={index}/>)}
+						{this.props.characters.map((character, index) => <Character key={"Character_info_" + index}
+						                                                            deleteCharacter={this.props.deleteCharacter}
+						                                                            character={character}
+						                                                            index={index}/>)}
 					</Col>
 					<Col md={6}>
 						<h2>Add a Party Member</h2>

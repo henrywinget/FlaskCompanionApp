@@ -44,11 +44,14 @@ class Character extends Component {
 		} = this.props.character;
 		
 		const characterHeader = <Row>
-			<Col md={3}>
+			<Col md={3} className={"Flex-beginning"}>
 				<Button onClick={this.toggle}>{this.state.isOpen ? 'Less' : 'More'}</Button>
 			</Col>
-			<Col md={6}>
+			<Col md={5}>
 				<p>{name}</p>
+			</Col>
+			<Col md={4} className={"Flex-end"}>
+				<Button onClick={() => this.props.deleteCharacter(this.props.character.id)} color={"danger"}>X</Button>
 			</Col>
 		</Row>;
 		
@@ -89,6 +92,7 @@ class Character extends Component {
 							<p>Charisma: {charisma}</p>
 						</Col>
 					</Row>
+				
 				</Collapse>
 			</div>
 		);

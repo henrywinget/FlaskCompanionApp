@@ -5,3 +5,17 @@
     box-shadow: 1px 2px 5px gray;
     background: white;
 }
+
+.Flex-end {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.Flex-beginning {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
