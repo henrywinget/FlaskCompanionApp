@@ -46,7 +46,6 @@ class Character extends Component {
 			wisdom,
 			charisma
 		} = this.props.character;
-		
 		const characterHeader = <Row>
 			<Col md={3} className={"Flex-beginning"}>
 				<Button onClick={this.toggle}>{this.state.isOpen ? 'Less' : 'More'}</Button>

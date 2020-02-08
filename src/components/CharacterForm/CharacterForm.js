@@ -126,7 +126,7 @@ class CharacterForm extends Component {
 			{ value: 'Halfling', label: 'Halfling', name: 'race'},
 			{ value: 'Elf', label: 'Elf', name: 'race'},
 			{ value: 'Gnome', label: 'Gnome', name: 'race'},
-			{ value: 'Half-ord', label: 'Half-ord', name: 'race'},
+			{ value: 'Half-orc', label: 'Half-orc', name: 'race'},
 			{ value: 'Tiefling', label: 'Tiefling', name: 'race'},
 			{ value: 'Dragonborn', label: 'Dragonborn', name: 'race'},
 			{ value: 'Dwarf', label: 'Dwarf', name: 'race'},

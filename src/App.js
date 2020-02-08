@@ -19,7 +19,9 @@ class App extends Component {
   // gets all of our DnD characters (nice)
   getAllCharacters = () => {
     API.doGet("/all_characters", data => {
-      this.setState({ characters: data })
+      if(data.length > 0) {
+        this.setState({ characters: data })
+      }
     })
   };
   
