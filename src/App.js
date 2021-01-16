@@ -13,7 +13,6 @@ class App extends Component {
   };
 
   componentDidMount() {
-    console.log('getting all characters');
     this.getAllCharacters();
   }
 
