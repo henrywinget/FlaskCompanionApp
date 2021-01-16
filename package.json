@@ -2,6 +2,7 @@
   "name": "dnd-flask",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://henrywinget.github.io/FlaskCompanionApp",
   "proxy": "http://localhost:5000/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
